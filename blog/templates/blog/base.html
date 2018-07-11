@@ -23,7 +23,8 @@
 
             <a href="{% url 'post_draft_list' %}" class="top-menu">
             <span class="glyphicon glyphicon-edit"></span>
-        </a> 
+            </a> 
+            <p>Hello {{ user.username }} <small>(<a href="{% url 'logout' %}">Logout</a>)</small></p>
         {% else %}
             <a href="{% url 'login' %}" class="top-menu">
                 <span class="glyphicon plyphicon-lock"></span>
